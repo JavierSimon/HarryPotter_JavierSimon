@@ -46,7 +46,7 @@
  }
 
 body {
-   background-color: #212529;
+   background-image: linear-gradient(to left, black, white);
 }
 
 .border {
@@ -81,7 +81,10 @@ nav ul {
    justify-content: center;
    align-content: center;
    flex-wrap: wrap;
+   
 }
+
+
 
 nav ul li {
    border: 2px solid #343a40;
@@ -90,6 +93,11 @@ nav ul li {
    background-color: #adb5bd;
    color: #212529;
    list-style-type: none;
+   transition: 1s;  
+}
+
+nav ul li:hover {
+   transform: rotate(30deg)
 }
 
 nav ul li a {
@@ -97,6 +105,8 @@ nav ul li a {
    color: #212529;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
 
 main {
    grid-area: contenido;
@@ -232,6 +242,11 @@ footer ul li {
    background-color: #adb5bd;
    color: #212529;
    list-style-type: none;
+   transition: 1s;
+}
+
+footer ul li:hover {
+   transform: rotate(25deg);
 }
 
 footer ul li a {
